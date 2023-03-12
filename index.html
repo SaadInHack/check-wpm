@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background-color: rgb(184, 184, 184);">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form class="js-form mt-5">
+                    <p class="form-control js-readonly-input">salom dunyo nima gapla bovettimi charchamayapslarmi</p>
+                    <input class="js-write-input form-control" type="text">
+                </form>
+                <div class="alert  d-flex flex-column alert-primary mt-5">
+                    <span class="result mb-2">Your result: </span>
+                    <span class="time">Time used: </span>
+                </div>  
+                <button class="btn js-try-btn btn-success d-none m-auto">
+                   Try Again 
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/words.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -114,6 +114,7 @@ elInput.addEventListener("keyup", (evt) => {
             }
         } else {
             localStorage.setItem("records", JSON.stringify([wpm, secund, time, minute]));
+            recorsFunction()
         }
     }
 })

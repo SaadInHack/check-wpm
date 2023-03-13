@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="background-color: rgb(184, 184, 184);">
+<body>
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-                <form class="js-form mt-5">
-                    <p class="form-control js-readonly-input">salom dunyo nima gapla bovettimi charchamayapslarmi</p>
-                    <input class="js-write-input form-control" type="text">
+                <form class="js-form">
+                    <span class="time">Time: 0</span>
+                    <input class="js-write-input mb-3" type="text" placeholder="write the words above">
+                    <p class="text js-readonly-input"></p>
                 </form>
-                <div class="alert  d-flex flex-column alert-primary mt-5">
-                    <span class="result mb-2">Your result: </span>
-                    <span class="time">Time used: </span>
+                <div class="line"></div>
+                <div class="d-flex justify-content-between align-items-start mt-3 flex-wrap">
+                    <div class="wrapper-result d-flex flex-column">
+                        <span class="result mb-2">Your result:</span>
+                    </div>
+                    <div class="wrapper-records justify-content-between d-flex flex-column">
+                        <span class="allTime js-allTimeHigh-wpm"></span>
+                        <span class="allTime js-allTimeLess-time"></span>
+                    </div>
                 </div>
-                <button class="btn js-try-btn btn-success d-none m-auto">
+                <button class="btn js-try-btn buttonTry d-none m-auto">
                     Try Again
                 </button>
             </div>
